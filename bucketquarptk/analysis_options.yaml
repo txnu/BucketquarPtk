@@ -10,6 +10,7 @@
 include: package:flutter_lints/flutter.yaml
 analyzer:
   errors:
+    prefer_const_constructors: ignore
     unused_local_variable: ignore
 
 linter:

@@ -16,9 +16,19 @@ class _DashboardUserState extends State<DashboardUser> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        actions: [
+          Container(
+            child: Container(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height * 2,
+              child: HomeAppBar(),
+            ),
+          ),
+        ],
+      ),
       body: ListView(
         children: [
-          HomeAppBar(),
           Container(
             // height: 500,
             padding: EdgeInsets.only(top: 15),
@@ -97,16 +107,13 @@ class _DashboardUserState extends State<DashboardUser> {
             color: Colors.pink,
             activeColor: Colors.white,
             tabBackgroundColor: Colors.pink,
-            gap: 8,
+            gap: 7,
             padding: EdgeInsets.all(18),
             onTabChange: (index) {
               print(index);
             },
             tabs: const [
-              GButton(
-                icon: Icons.home,
-                text: "Home",
-              ),
+              GButton(icon: Icons.home, text: "Home"),
               GButton(icon: Icons.location_city, text: "Tracking"),
               GButton(icon: Icons.notification_add, text: "Notification"),
               GButton(icon: Icons.manage_accounts, text: "Account"),
