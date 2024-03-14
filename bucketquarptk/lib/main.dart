@@ -1,3 +1,4 @@
+import 'package:bucketquarptk/User/Screen/ChatScreen.dart';
 import 'package:bucketquarptk/User/Screen/KeranjangScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
       initialRoute: "/",
       routes: {
         "/": (context) => DashboardUser(),
-        "keranjang": (context) => KeranjangScreen()
+        "keranjang": (context) => KeranjangScreen(),
+        "chat": (context) => ChatScreen(),
       },
     );
   }

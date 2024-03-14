@@ -44,7 +44,9 @@ class HomeAppBar extends StatelessWidget {
           Badge(
             padding: EdgeInsets.all(7),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, "chat");
+              },
               child: Icon(
                 Icons.chat_outlined,
                 size: 30,
