@@ -34,6 +34,7 @@ class NotificationWidget extends StatelessWidget {
                 child: Icon(
                   Icons.notifications_active,
                   size: 35,
+                  color: Colors.pink,
                 ),
               ),
               Padding(
@@ -92,6 +93,7 @@ class NotificationWidget extends StatelessWidget {
                 child: Icon(
                   Icons.notifications_active,
                   size: 35,
+                  color: Colors.pink,
                 ),
               ),
               Padding(
