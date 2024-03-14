@@ -29,7 +29,9 @@ class HomeAppBar extends StatelessWidget {
           Badge(
             padding: EdgeInsets.all(7),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context, "keranjang");
+              },
               child: Icon(
                 Icons.shopping_cart_checkout,
                 size: 30,

@@ -1,9 +1,8 @@
 import 'package:bucketquarptk/User/Widget/HomeAppBar.dart';
+import 'package:bucketquarptk/User/Widget/ItemsWidget.dart';
 import 'package:bucketquarptk/User/Widget/KategoriWidget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-
-import 'Widget/ItemsWidget.dart';
 
 class DashboardUser extends StatefulWidget {
   const DashboardUser({super.key});
@@ -21,7 +20,7 @@ class _DashboardUserState extends State<DashboardUser> {
           Container(
             child: Container(
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height * 2,
+              height: MediaQuery.of(context).size.height,
               child: HomeAppBar(),
             ),
           ),
@@ -113,8 +112,11 @@ class _DashboardUserState extends State<DashboardUser> {
               print(index);
             },
             tabs: const [
-              GButton(icon: Icons.home, text: "Home"),
-              GButton(icon: Icons.location_city, text: "Tracking"),
+              GButton(
+                icon: Icons.home,
+                text: "Home",
+              ),
+              GButton(icon: Icons.location_on, text: "Tracking"),
               GButton(icon: Icons.notification_add, text: "Notification"),
               GButton(icon: Icons.manage_accounts, text: "Account"),
             ],
