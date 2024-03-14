@@ -23,19 +23,22 @@ class NotificationWidget extends StatelessWidget {
           margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
           padding: EdgeInsets.all(10),
           decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(15),
-          ),
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(15),
+              border: Border.all(color: Colors.grey)),
           child: Row(
             children: [
               Container(
-                height: 50,
-                width: 50,
+                height: 40,
+                width: 40,
                 child: Icon(
                   Icons.notifications_active,
                   size: 35,
                   color: Colors.pink,
                 ),
+              ),
+              SizedBox(
+                width: 3,
               ),
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 20),
@@ -57,6 +60,9 @@ class NotificationWidget extends StatelessWidget {
                     )
                   ],
                 ),
+              ),
+              SizedBox(
+                width: 5,
               ),
               Container(
                 height: 80,
@@ -88,13 +94,16 @@ class NotificationWidget extends StatelessWidget {
           child: Row(
             children: [
               Container(
-                height: 50,
-                width: 50,
+                height: 40,
+                width: 40,
                 child: Icon(
                   Icons.notifications_active,
                   size: 35,
                   color: Colors.pink,
                 ),
+              ),
+              SizedBox(
+                width: 3,
               ),
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 20),
@@ -116,6 +125,9 @@ class NotificationWidget extends StatelessWidget {
                     )
                   ],
                 ),
+              ),
+              SizedBox(
+                width: 5,
               ),
               Container(
                 height: 80,
